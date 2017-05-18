@@ -20,11 +20,11 @@
             .state('collection', {
                 url: '/collection',
                 controller: 'CollectionCtrl as collection',
-                templateUrl: 'templates/collection.html'
+                templateUrl: '/templates/collection.html'
             });
     }
      angular
         .module('blocJams', ['ui.router'])
         .config(config);
 
-} ());
+})();

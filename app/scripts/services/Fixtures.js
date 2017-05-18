@@ -34,13 +34,19 @@
         Fixtures.getAlbum = function() {
             return albumPicasso;
         };
-        Fixtures.numberOfAlbums = function() {
-            return albumPicasso;
-        }
+        Fixtures.getCollection = function(numberOfAlbums) {
+            var albumCollection = [];
+            for (var i=0; i < numberOfAlbums; i++) {
+                albumCollection.push(angular.copy(albumPicasso));
+            }
+            return albumCollection;
+        };
+
          return Fixtures;
      }
 
      angular
          .module('blocJams')
          .factory('Fixtures', Fixtures);
- })();
+
+})();
