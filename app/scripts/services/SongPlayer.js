@@ -25,7 +25,9 @@
 
             currentSong = song;
         };
-
+        //@function SongPlayer.play(song)
+        //@desc plays a song from the beginning if the song has not already started and continues playing the song from where it left off if not
+        //@params {Object} song
           SongPlayer.play = function(song) {
               if (currentSong !== song) {
               setSong(song);
@@ -37,7 +39,9 @@
                 }
             }
         };
-
+        //@function SongPlayer.pause(song)
+        //@desc pauses a song at its current time point
+        //@params {Object} song
             SongPlayer.pause = function(song) {
                 currentBuzzObject.pause();
                 song.playing = false;
