@@ -34,7 +34,9 @@
         Fixtures.getAlbum = function() {
             return albumPicasso;
         };
-        
+        Fixtures.numberOfAlbums = function() {
+            return albumPicasso;
+        }
          return Fixtures;
      }
 
